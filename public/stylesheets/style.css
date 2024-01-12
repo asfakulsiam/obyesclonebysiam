@@ -45,6 +45,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: #070707;
 }
 
 /* --- BASE --- */
@@ -67,12 +68,12 @@ background color: #0b0b0b
     width: 100%;
     position: fixed;
     z-index: 999;
-    background-color: #0b0b0b;
-    padding: 25vh 10vw;
+    background-color: #070707;
+    padding: 10vh 6vw 0 6vw;
 }
 
 #loader .line {
-    font-size: 3vw;
+    font-size: 3.2vw;
     text-transform: uppercase;
     height: fit-content;
     margin-bottom: 0.1vw;
@@ -88,7 +89,7 @@ background color: #0b0b0b
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: .8vw;
     padding-right: 2vw;
 }
 .line-counter h5,h6 {
@@ -99,18 +100,47 @@ background color: #0b0b0b
 
 #line-three h2 {
     text-transform: uppercase;
-    font-size: 6vw;
+    font-size: 6.2vw;
+    animation: anime 2s infinite .5s ;
     /* font-family: ; */
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#counter-elm {
+    width: 3.8vw;
+    text-align: left;
 }
 
 
+#loader p {
+    padding-left: 5vw;
+    padding-top: 5vw;
+    font-family: 'Plain light regular';
+}
 
+
+@keyframes anime {
+    0%{
+        font-family: 'Silk serif light italic';
+        font-weight: 100;
+        -webkit-text-fill-color: #070707;
+        -webkit-text-stroke: .5px white;
+    }
+    100%{
+        font-family: 'Plain regular';
+        font-weight: 200;
+        -webkit-text-fill-color: #070707;
+        -webkit-text-stroke: .5px white;
+    }
+}
 
 
 /* main - don't change anything in main */
 #main {
     position: relative;
-    background-color: #151515;
+    /* background-color: #151515; */
 }
 
 /* ------ */
@@ -119,4 +149,58 @@ background color: #0b0b0b
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+/* navbar */
+.nav-bar {
+    width: 100%;
+    height: 10vh;
+    padding: 9vh 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-bar .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.nav-bar .nav-button button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav-title {
+    padding-left: 13.2vw;
+    padding-top: 3vw;
+    font-family: 'Plain regular';
+    font-size: 1vw;
+}
+.nav-bar .nav-link a{
+    text-decoration: none;
+    margin: 0 .9vw;
+    display: inline-block;
+    font-family: 'Plain regular';
+}
+
+
+
+
+
+
+
+
+
+#page-two {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+#page-three {
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
 }
