@@ -13,7 +13,7 @@ function loaderAnimation() {
     const tl = gsap.timeline();
 
 tl.from('.line h1', {
-    y: 100,
+    y: 110,
     stagger: 0.2,
     duration: .5,
     delay: .5

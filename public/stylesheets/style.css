@@ -1,6 +1,6 @@
 /* --- BASE --- */
 @font-face {
-    font-family: 'Plain lIght';
+    font-family: 'Plain light';
     src: url('/obyesclonebysiam/public/assets/font/plain-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -70,10 +70,11 @@ background color: #0b0b0b
     z-index: 999;
     background-color: #070707;
     padding: 10vh 6vw 0 6vw;
+
 }
 
 #loader .line {
-    font-size: 3.2vw;
+    font-size: 3.7vw;
     text-transform: uppercase;
     height: fit-content;
     margin-bottom: 0.1vw;
@@ -83,6 +84,8 @@ background color: #0b0b0b
     align-items: center;
     justify-content: flex-start;
     gap: 1.5vw;
+    letter-spacing: .1vw;
+    line-height: 7vw;
 
 }
 .line-counter {
@@ -100,7 +103,7 @@ background color: #0b0b0b
 
 #line-three h2 {
     text-transform: uppercase;
-    font-size: 6.2vw;
+    font-size: 7vw;
     animation: anime 2s infinite .5s ;
     /* font-family: ; */
     height: 5vh;
@@ -115,9 +118,10 @@ background color: #0b0b0b
 
 
 #loader p {
-    padding-left: 5vw;
-    padding-top: 5vw;
+    padding-left: 25vw;
+    padding-top: 4.5vw;
     font-family: 'Plain light regular';
+    font-size: 1.2vw;
 }
 
 
@@ -188,8 +192,21 @@ background color: #0b0b0b
 
 
 
+/* header section */
+header div {
+    font-size: 3.5vw;
+    line-height: 7.5vw;
+    font-family: 'Plain light';
+    text-transform: uppercase;
+    width: 70%;
+    margin-left: 30%;
+    letter-spacing: .5vw;
+}
 
 
+header div:nth-child(1) {
+    margin-top: 17vh;
+}
 
 
 
