@@ -1,0 +1,255 @@
+/* --- BASE --- */
+@font-face {
+    font-family: 'Plain light';
+    src: url('/obyesclonebysiam/public/assets/font/plain-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain regular';
+    src: url('/obyesclonebysiam/public/assets/font/plain-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silk serif light italic';
+    src: url('/obyesclonebysiam/public/assets/font/silkserif-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silk serif light regular';
+    src: url('/obyesclonebysiam/public/assets/font/silkserif-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Plain light';
+    cursor: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070707;
+}
+
+/* --- BASE --- */
+
+/* colors 
+
+loader color: #0b0b0b 
+background color: #0b0b0b
+*/
+
+/* font names 
+    plain
+    silk serif
+
+*/
+
+/* magnet */
+.magnet {
+    width: 2.5vw;
+    height: 2.5vw;
+    /* background-color: #151515; */
+    border: 2px solid rgba(255, 255, 255, 0.678) ;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+
+
+
+/* loader */
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #070707;
+    padding: 10vh 6vw 0 6vw;
+
+}
+
+#loader .line {
+    font-size: 3.7vw;
+    text-transform: uppercase;
+    height: fit-content;
+    margin-bottom: 0.1vw;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5vw;
+    letter-spacing: .1vw;
+    line-height: 7vw;
+
+}
+.line-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8vw;
+    padding-right: 2vw;
+}
+.line-counter h5,h6 {
+    font-size: 2.5vw;
+    font-family: 'Silk serif light italic';
+    font-weight: 400;
+}
+
+#line-three h2 {
+    text-transform: uppercase;
+    font-size: 7vw;
+    animation: anime 2s infinite .5s ;
+    /* font-family: ; */
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#counter-elm {
+    width: 3.8vw;
+    text-align: left;
+}
+
+
+#loader p {
+    padding-left: 25vw;
+    padding-top: 4.5vw;
+    font-family: 'Plain light regular';
+    font-size: 1.2vw;
+}
+
+
+@keyframes anime {
+    0%{
+        font-family: 'Silk serif light italic';
+        font-weight: 100;
+        -webkit-text-fill-color: #070707;
+        -webkit-text-stroke: .5px white;
+    }
+    100%{
+        font-family: 'Plain regular';
+        font-weight: 200;
+        -webkit-text-fill-color: #070707;
+        -webkit-text-stroke: .5px white;
+    }
+}
+
+
+/* main - don't change anything in main */
+#main {
+    position: relative;
+    /* background-color: #151515; */
+}
+
+/* ------ */
+
+#page-one {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+
+/* navbar */
+.nav-bar {
+    width: 100%;
+    height: 10vh;
+    padding: 9vh 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-bar .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.nav-bar .nav-button button{
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .2vw;
+    position: relative;
+}
+.nav-bar .nav-button button svg {
+    width: 100%;
+    height: 100%;
+    padding: 1.2vw;
+    transition: cubic-bezier(1, 0, 0, 1);
+}
+.nav-title {
+    padding-left: 13.2vw;
+    padding-top: 3vw;
+    font-family: 'Plain regular';
+    font-size: 1vw;
+}
+.nav-bar .nav-link a span{
+    display: inline-block;
+    text-decoration: none;
+    /* background: black; */
+    padding: .5vw 1vw;
+    font-family: 'Plain regular';
+    position: relative;
+    transition: linear .15s;
+    z-index: 1;
+}
+
+
+
+/* header section */
+header div {
+    font-size: 3.5vw;
+    line-height: 7.5vw;
+    font-family: 'Plain light';
+    text-transform: uppercase;
+    width: 70%;
+    margin-left: 30%;
+    letter-spacing: .5vw;
+}
+
+
+header div:nth-child(1) {
+    margin-top: 17vh;
+}
+
+
+
+
+#page-two {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+#page-three {
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+}
